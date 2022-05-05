@@ -14,8 +14,11 @@ spec:
     gitName: github
     gitServer: https://github.com
     provider: minikube
+    registry: 10.103.154.235
   environments:
   - key: dev
+    owner: koishus
+    repository: pruebitas_jenkinx
   - key: staging
   - key: production
   ingress:
@@ -26,6 +29,8 @@ spec:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: koishus
   repository: bucketrepo
   secretStorage: local
   vault: {}
